@@ -10,6 +10,8 @@
 		92CD31AF1FBD09D500CA844F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CD31AE1FBD09D500CA844F /* Main.storyboard */; };
 		92CD31B41FBD141100CA844F /* VVDocumenterSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = E84951AD1FBCBF9500D306A5 /* VVDocumenterSetting.m */; };
 		92CD31B51FBD14C500CA844F /* VVDSettingPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84951AF1FBCBF9500D306A5 /* VVDSettingPanelController.m */; };
+		9D193B7726FA2F9A000A8DB1 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D193B7526FA2F95000A8DB1 /* XcodeKit.framework */; };
+		9D193B7826FA2F9A000A8DB1 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D193B7526FA2F95000A8DB1 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E84951B11FBCBF9500D306A5 /* VVDocumenterSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = E84951AD1FBCBF9500D306A5 /* VVDocumenterSetting.m */; };
 		E84951B31FBCBF9500D306A5 /* VVDSettingPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84951AF1FBCBF9500D306A5 /* VVDSettingPanelController.m */; };
 		E8503BA61FBC8F6C00EE4300 /* VVWorkspaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8503B6A1FBC8F6C00EE4300 /* VVWorkspaceManager.m */; };
@@ -55,6 +57,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9D193B7926FA2F9A000A8DB1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D193B7826FA2F9A000A8DB1 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8555AC71FBC8EC6007C0870 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +83,7 @@
 
 /* Begin PBXFileReference section */
 		92CD31AE1FBD09D500CA844F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9D193B7526FA2F95000A8DB1 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		E84951AC1FBCBF9500D306A5 /* VVDSettingPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDSettingPanelController.h; sourceTree = "<group>"; };
 		E84951AD1FBCBF9500D306A5 /* VVDocumenterSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDocumenterSetting.m; sourceTree = "<group>"; };
 		E84951AF1FBCBF9500D306A5 /* VVDSettingPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVDSettingPanelController.m; sourceTree = "<group>"; };
@@ -153,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8555AB71FBC8EC6007C0870 /* Cocoa.framework in Frameworks */,
+				9D193B7726FA2F9A000A8DB1 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +341,7 @@
 		E8555AB51FBC8EC6007C0870 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D193B7526FA2F95000A8DB1 /* XcodeKit.framework */,
 				E8555AB61FBC8EC6007C0870 /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -375,6 +391,7 @@
 				E8555AB01FBC8EC6007C0870 /* Sources */,
 				E8555AB11FBC8EC6007C0870 /* Frameworks */,
 				E8555AB21FBC8EC6007C0870 /* Resources */,
+				9D193B7926FA2F9A000A8DB1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -624,7 +641,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 22AFPHX3AU;
+				DEVELOPMENT_TEAM = T69UTGP6LQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DocumenterXcode/Documenter-Prefix.pch";
 				INFOPLIST_FILE = DocumenterXcode/Info.plist;
@@ -644,7 +661,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 22AFPHX3AU;
+				DEVELOPMENT_TEAM = T69UTGP6LQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DocumenterXcode/Documenter-Prefix.pch";
 				INFOPLIST_FILE = DocumenterXcode/Info.plist;
@@ -663,7 +680,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 22AFPHX3AU;
+				DEVELOPMENT_TEAM = T69UTGP6LQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VVDocumenter/VVDocumenter-Prefix.pch";
 				INFOPLIST_FILE = VVDocumenter/Info.plist;
@@ -683,7 +700,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 22AFPHX3AU;
+				DEVELOPMENT_TEAM = T69UTGP6LQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VVDocumenter/VVDocumenter-Prefix.pch";
 				INFOPLIST_FILE = VVDocumenter/Info.plist;
